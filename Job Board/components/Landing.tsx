@@ -1,7 +1,5 @@
 import React from 'react'
-import './App.css'
 
-// Define the main App component
 const App: React.FC = () => {
   return (
     <div className="app-container">
