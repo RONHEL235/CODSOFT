@@ -8,10 +8,8 @@ const PORT = 5000
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// Serve uploaded files statically
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
-// In-memory storage for simplicity (replace with a database in a real app)
 let uploadedFiles: string[] = []
 let jobPostings: { title: string description: string location: string }[] = []
 
