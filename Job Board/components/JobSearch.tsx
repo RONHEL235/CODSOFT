@@ -12,7 +12,6 @@ const JobSearch: React.FC = () => {
 
   const handleSearch = async () => {
     try {
-      // Replace this URL with the actual API endpoint for job search
       const response = await fetch(`https://jsonplaceholder.typicode.com/posts?title=${searchTerm}`)
       const data = await response.json()
       setJobs(data)
